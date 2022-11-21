@@ -1,5 +1,7 @@
 #pragma once
 
+template<class> class LinkedList;
+
 template <typename T>
 
 class Node
@@ -36,4 +38,6 @@ public:
     {
         next = newnext;
     }
+    
+    friend class LinkedList<T>;
 };
